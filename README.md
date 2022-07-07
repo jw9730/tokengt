@@ -6,4 +6,4 @@ We are planning to release the code during July.
 [Jinwoo Kim](https://bit.ly/3pPuyIb), [Tien Dat Nguyen](https://github.com/tiendatnguyen-vision), [Seonwoo Min](https://scholar.google.co.kr/citations?user=dWKk68wAAAAJ&hl=en), [Sungjun Cho](https://scholar.google.com/citations?user=bEilQPMAAAAJ&hl=en), [Moontae Lee](https://moontae.people.uic.edu/), [Honglak Lee](https://web.eecs.umich.edu/~honglak/), [Seunghoon Hong](https://maga33.github.io/) \
 arXiv Preprint
 
-![image-tokengt](./docs/tokengt.png)
+![image-tokengt](./tokengt.png)
