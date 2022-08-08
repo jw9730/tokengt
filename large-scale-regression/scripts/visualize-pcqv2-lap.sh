@@ -18,7 +18,7 @@ python ../visualize/visualize_attn_dist.py \
 --num-classes 1 \
 --batch-size 64 \
 --data-buffer-size 20 \
---save-dir ckpts/pcqv2-tokengt-lap16-pretrained \
+--save-dir ckpts/pcqv2-tokengt-lap16 \
 --split valid \
 --seed 12 \
 --return-attention
