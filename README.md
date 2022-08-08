@@ -63,7 +63,7 @@ Then, unzip ```ckpts``` and place it in the ```large-scale-regression/scripts```
 After that, you can resume the training from these checkpoints by adding the option ```--pretrained-model-name pcqv2-tokengt-[NODE ID.]-trained``` to the training scripts.
 
 ## References
-Our implementation heavily depends on the code from the following repositories:
+Our implementation uses code from the following repositories:
 - [Performer](https://github.com/lucidrains/performer-pytorch.git) for FAVOR+ attention kernel
 - [Graph Transformer](https://github.com/graphdeeplearning/graphtransformer.git), [SignNet](https://github.com/cptq/SignNet-BasisNet.git), and [SAN](https://github.com/DevinKreuzer/SAN/blob/main/data/molecules.py) for Laplacian eigenvectors
 - [Graphormer](https://github.com/microsoft/Graphormer.git) for PCQM4Mv2 experiment pipeline
