@@ -22,5 +22,4 @@ RUN git config --global --add safe.directory /tokengt
 RUN git config --global --add safe.directory /tokengt/large-scale-regression/fairseq
 WORKDIR /tokengt
 
-RUN bash install.sh
 CMD ["/bin/bash"]

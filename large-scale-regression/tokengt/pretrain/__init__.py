@@ -7,7 +7,8 @@ PRETRAINED_MODEL_URLS = {
 
 PRETRAINED_MODEL_PATHS = {
     'pcqv2-tokengt-orf64': 'ckpts/pcqv2-tokengt-orf64-pretrained/checkpoint_best.pt',
-    'pcqv2-tokengt-lap16': 'ckpts/pcqv2-tokengt-lap16-pretrained/checkpoint_best.pt'
+    'pcqv2-tokengt-lap16': 'ckpts/pcqv2-tokengt-lap16-pretrained/checkpoint_best.pt',
+    'pcqv2-tokengt-lap16-performer': 'ckpts/pcqv2-tokengt-lap16-performer-pretrained/checkpoint_best.pt'
 }
 
 
