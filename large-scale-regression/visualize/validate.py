@@ -21,7 +21,6 @@ import logging
 
 
 def validate(args, checkpoint_path=None, logger=None, save_path=''):
-    assert args.return_attention
     cfg = convert_namespace_to_omegaconf(args)
     np.random.seed(cfg.common.seed)
     utils.set_torch_seed(cfg.common.seed)
