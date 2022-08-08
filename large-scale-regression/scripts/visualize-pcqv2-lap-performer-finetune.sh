@@ -15,6 +15,7 @@ python ../visualize/validate.py \
 --lap-node-id-k 16 \
 --lap-node-id-sign-flip \
 --performer \
+--attention-dropout 0.0 \
 --prenorm \
 --num-classes 1 \
 --batch-size 64 \
