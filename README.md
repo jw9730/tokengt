@@ -67,7 +67,7 @@ Our implementation uses code from the following repositories:
 - [Performer](https://github.com/lucidrains/performer-pytorch.git) for FAVOR+ attention kernel
 - [Graph Transformer](https://github.com/graphdeeplearning/graphtransformer.git), [SignNet](https://github.com/cptq/SignNet-BasisNet.git), and [SAN](https://github.com/DevinKreuzer/SAN/blob/main/data/molecules.py) for Laplacian eigenvectors
 - [Graphormer](https://github.com/microsoft/Graphormer.git) for PCQM4Mv2 experiment pipeline
-- [DropBlock](https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/layers/drop.py) for stochastic depth
+- [timm](https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/layers/drop.py) for stochastic depth regularization
 
 ## Citation
 If you find our work useful, please consider citing it:
