@@ -80,7 +80,10 @@ def validate(args, checkpoint_path=None, logger=None, save_path=''):
         for i, sample in enumerate(progress):
             sample = utils.move_to_cuda(sample)
             target = sample["net_input"]["batched_data"]["y"]
+
             x, attn_dict = model(**sample["net_input"])
+            attn_map_dict = attn_dict['maps']  # attn_map_dict[0].shape = [H, B, T+2, T+2]  torch.Size([16, 96, 57, 57])
+            H, B, _, _ = attn_map_dict[0].size()
             avg_all_mae += nn.L1Loss(reduction="sum")(x.view(-1), target.view(-1)).item()
             total_num_samples += B
 
@@ -99,7 +102,7 @@ def main():
     logger = logging.getLogger(__name__)
     save_path = os.path.join(args.save_dir, f'checkpoint_best_visualize_{args.split}.pt')
 
-    visualize(args, best_checkpoint_path, logger, save_path=save_path)
+    validate(args, best_checkpoint_path, logger, save_path=save_path)
 
 
 if __name__ == '__main__':
