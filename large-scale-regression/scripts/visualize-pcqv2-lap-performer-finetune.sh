@@ -23,5 +23,4 @@ python ../visualize/validate.py \
 --data-buffer-size 20 \
 --save-dir ckpts/pcqv2-tokengt-lap16-performer-finetune-pretrained \
 --split valid \
---seed 12 \
---return-attention
+--seed 12
