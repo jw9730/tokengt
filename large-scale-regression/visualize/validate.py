@@ -79,23 +79,8 @@ def validate(args, checkpoint_path=None, logger=None, save_path=''):
         print("len(progress) = ", len(progress))
         for i, sample in enumerate(progress):
             sample = utils.move_to_cuda(sample)
-            node_num = sample["net_input"]["batched_data"]["node_num"]
-            edge_num = sample["net_input"]["batched_data"]["edge_num"]
             target = sample["net_input"]["batched_data"]["y"]
-
-            edge12_num = [node_num[i] + edge_num[i] for i in range(len(node_num))]
             x, attn_dict = model(**sample["net_input"])
-
-            device = x.device
-            padded_index = attn_dict['padded_index']  # [B, T, 2]
-            attn_map_dict = attn_dict['maps']  # attn_map_dict[0].shape = [H, B, T+2, T+2]  torch.Size([16, 96, 57, 57])
-
-            H, B, _, _ = attn_map_dict[0].size()
-            L = len(attn_map_dict.keys())
-            T = max(edge12_num)
-            assert num_encoder_layers == L
-            assert num_heads == H
-
             avg_all_mae += nn.L1Loss(reduction="sum")(x.view(-1), target.view(-1)).item()
             total_num_samples += B
 
