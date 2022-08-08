@@ -28,7 +28,6 @@ def validate(args, checkpoint_path=None, logger=None, save_path=''):
     # initialize task
     task = tasks.setup_task(cfg.task)
     model = task.build_model(cfg.model)
-    model.encoder.performer_finetune_setup()
 
     # load checkpoint
     model_state = torch.load(checkpoint_path)["model"]
