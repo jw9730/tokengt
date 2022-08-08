@@ -10,18 +10,12 @@ python ../visualize/visualize_attn_dist.py \
 --dataset-source ogb \
 --task graph_prediction \
 --criterion l1_loss \
---arch tokengt_base \
---lap-node-id \
---lap-node-id-k 16 \
---lap-node-id-sign-flip \
---performer \
---performer-finetune \
---performer-feature-redraw-interval 100 \
+--arch tokengt_base_ablated \
 --prenorm \
 --num-classes 1 \
 --batch-size 64 \
 --data-buffer-size 20 \
---save-dir ckpts/pcqv2-tokengt-lap16-performer-finetune-pretrained \
+--save-dir ckpts/pcqv2-tokengt-ablated-pretrained \
 --split valid \
 --seed 12 \
 --return-attention
