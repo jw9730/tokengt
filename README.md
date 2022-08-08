@@ -58,9 +58,10 @@ bash visualize-pcqv2-lap.sh
 ```
 
 ## Pre-Trained Models
-We provide checkpoints of ```TokenGT (ORF)``` and ```TokenGT (Lap)``` trained with PCQM4Mv2. Please download ```ckpts.zip``` from this [link](https://drive.google.com/drive/folders/1mo0dV-aLxGFWbPF8xfE8phWTmOtIV1HG?usp=sharing).
-Then, unzip ```ckpts``` and place it in the ```large-scale-regression/scripts``` folder, so that each checkpoint is located at ```large-scale-regression/scripts/ckpts/pcqv2-tokengt-[NODE ID.]-trained/checkpoint_best.pt```.
-After that, you can resume the training from these checkpoints by adding the option ```--pretrained-model-name pcqv2-tokengt-[NODE ID.]-trained``` to the training scripts.
+We provide checkpoints of ```TokenGT (ORF)``` and ```TokenGT (Lap)```, both trained with PCQM4Mv2.
+Please download ```ckpts.zip``` from [this link](https://drive.google.com/drive/folders/1mo0dV-aLxGFWbPF8xfE8phWTmOtIV1HG?usp=sharing).
+Then, unzip ```ckpts``` and place it in the ```large-scale-regression/scripts``` directory, so that each trained checkpoint is located at ```large-scale-regression/scripts/ckpts/pcqv2-tokengt-[NODE_IDENTIFIER]-trained/checkpoint_best.pt```.
+After that, you can resume the training from these checkpoints by adding the option ```--pretrained-model-name pcqv2-tokengt-[NODE_IDENTIFIER]-trained``` to the training scripts.
 
 ## References
 Our implementation uses code from the following repositories:
