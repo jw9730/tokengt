@@ -214,7 +214,6 @@ class TokenGTGraphEncoder(nn.Module):
 
     def performer_finetune_setup(self):
         assert self.performer_finetune
-        assert not self.performer
         (
             performer_nb_features,
             performer_generalized_attention,
