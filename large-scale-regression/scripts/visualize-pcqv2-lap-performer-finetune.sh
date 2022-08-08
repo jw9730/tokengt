@@ -16,7 +16,6 @@ python ../visualize/validate.py \
 --lap-node-id-sign-flip \
 --performer \
 --performer-finetune \
---performer-feature-redraw-interval 100 \
 --prenorm \
 --num-classes 1 \
 --batch-size 64 \
