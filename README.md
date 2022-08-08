@@ -60,7 +60,14 @@ bash visualize-pcqv2-lap.sh
 ## Pre-Trained Models
 We provide checkpoints of ```TokenGT (ORF)``` and ```TokenGT (Lap)``` trained with PCQM4Mv2. Please download ```ckpts.zip``` from this [link](https://drive.google.com/drive/folders/1mo0dV-aLxGFWbPF8xfE8phWTmOtIV1HG?usp=sharing).
 Then, unzip ```ckpts``` and place it in the ```large-scale-regression/scripts``` folder, so that each checkpoint is located at ```large-scale-regression/scripts/ckpts/pcqv2-tokengt-[NODE ID.]-trained/checkpoint_best.pt```.
-You can resume the training from the checkpoints by adding the option ```--pretrained-model-name pcqv2-tokengt-[NODE ID.]-trained``` to the training scripts.
+After that, you can resume the training from these checkpoints by adding the option ```--pretrained-model-name pcqv2-tokengt-[NODE ID.]-trained``` to the training scripts.
+
+## References
+Our implementation heavily depends on the code from the following repositories:
+- [Performer](https://github.com/lucidrains/performer-pytorch.git) for FAVOR+ attention kernel
+- [Graph Transformer](https://github.com/graphdeeplearning/graphtransformer.git), [SignNet](https://github.com/cptq/SignNet-BasisNet.git), and [SAN](https://github.com/DevinKreuzer/SAN/blob/main/data/molecules.py) for Laplacian eigenvectors
+- [Graphormer](https://github.com/microsoft/Graphormer.git) for PCQM4Mv2 experiment pipeline
+- [DropBlock](https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/layers/drop.py) for stochastic depth
 
 ## Citation
 If you find our work useful, please consider citing it:
