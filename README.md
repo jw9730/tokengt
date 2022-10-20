@@ -74,7 +74,7 @@ Our implementation uses code from the following repositories:
 If you find our work useful, please consider citing it:
 
 ```bib
-@article{kim2021transformers,
+@article{kim2022pure,
   author    = {Jinwoo Kim and Tien Dat Nguyen and Seonwoo Min and Sungjun Cho and Moontae Lee and Honglak Lee and Seunghoon Hong},
   title     = {Pure Transformers are Powerful Graph Learners},
   journal   = {arXiv},
