@@ -34,6 +34,19 @@ bash install.sh
 
 ## Running experiments
 
+Synthetic second-order equivariant basis approximation
+```bash
+cd equivariant-basis-approximation/scripts
+
+# Train and save logs, ckpts, and attention maps (--save_display)
+bash [INPUT]-[NODE_IDENTIFIER]-[TYPE_IDENTIFIER].sh
+
+# Test and save attention maps (--save_display)
+bash [INPUT]-[NODE_IDENTIFIER]-[TYPE_IDENTIFIER]-test.sh
+
+# For the visualization of saved attention maps, please see viz_multi.ipynb
+```
+
 PCQM4Mv2 large-scale graph regression
 ```bash
 cd large-scale-regression/scripts
